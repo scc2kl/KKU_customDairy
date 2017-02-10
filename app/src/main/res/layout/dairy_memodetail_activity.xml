@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#FFFFE4"
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:background="@drawable/white_stroke"
+        android:background="#FFFFE4"
         android:orientation="vertical">
 
         <LinearLayout
@@ -16,8 +18,8 @@
             android:layout_height="0dp"
             android:layout_weight="2">
 
-            <EditText
-                android:id="@+id/dMemoTitle"
+            <com.example.khj.customdiary.CustomLayout.MyEextView
+                android:id="@+id/dMemoTitleEv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="8"
@@ -31,8 +33,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:background="@drawable/my_selector"
-                android:src="@drawable/home"/>
+                android:background="@drawable/lv_selector"
+                android:src="@drawable/save"
+                android:padding="10dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -40,14 +43,16 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/my_selector">
+            android:background="@drawable/lv_selector"
+            android:layout_marginTop="10dp">
 
             <ImageView
                 android:id="@+id/dMemoCtgIv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:src="@drawable/plus" />
+                android:src="@drawable/plus"
+                android:layout_margin="5dp"/>
 
             <TextView
                 android:id="@+id/dMemoCtgTv"
@@ -56,7 +61,7 @@
                 android:layout_weight="8"
                 android:background="@drawable/white_stroke"
                 android:gravity="center_vertical"
-                android:paddingLeft="30dp"
+                android:paddingLeft="12dp"
                 android:text="카테고리 이름 입니다."
                 android:textSize="22dp" />
         </LinearLayout>
@@ -65,9 +70,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:background="@drawable/white_stroke"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -80,7 +86,8 @@
                 android:gravity="center_vertical"
                 android:paddingLeft="20dp"
                 android:text="하루 종일"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -88,7 +95,7 @@
                 android:layout_weight="5"></LinearLayout>
 
             <Switch
-                android:id="@+id/dMemoAsw"
+                android:id="@+id/dMemoAllSw"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
@@ -98,7 +105,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:background="@drawable/white_stroke">
 
             <TextView
                 android:layout_width="0dp"
@@ -110,6 +118,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/dMemoStartDateTv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="4"
@@ -118,6 +127,7 @@
                 android:textSize="15dp" />
 
             <TextView
+                android:id="@+id/dMemoStartTimeTv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
@@ -129,7 +139,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            >
 
             <TextView
                 android:layout_width="0dp"
@@ -141,6 +152,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/dMemoEndDateTv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="4"
@@ -149,6 +161,7 @@
                 android:textSize="15dp" />
 
             <TextView
+                android:id="@+id/dMemoEndTimeTv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
@@ -161,14 +174,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@drawable/white_stroke">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:gravity="center"
+            android:gravity="center_vertical"
             android:text="알림"
+            android:paddingLeft="20dp"
             android:textSize="20dp" />
 
         <LinearLayout
@@ -184,7 +199,8 @@
             android:gravity="center"
             android:text="30일전"
             android:textSize="15dp"
-            android:background="@drawable/my_selector"/>
+            android:layout_marginRight="10dp"
+            android:background="@drawable/lv_selector"/>
 
         <Switch
             android:id="@+id/dMemoNtsw"
@@ -194,18 +210,24 @@
             android:paddingRight="20dp" />
     </LinearLayout>
 
+<!--
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:background="@drawable/white_stroke">
+-->
 
-        <EditText
+        <com.example.khj.customdiary.CustomLayout.MyEextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/dMemoEv"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="3"
             android:gravity="center_vertical"
+            android:background="@drawable/white_stroke"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:hint="추가적인 내용을 입력해 주세요" />
-    </ScrollView>
+    <!--</ScrollView>-->
 </LinearLayout>
