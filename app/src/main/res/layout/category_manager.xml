@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/categoryTv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="카테고리 관리"
+        android:textSize="30dp" />
+
+    <ListView
+        android:id="@+id/categorylv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></ListView>
+
+    <GridView
+        android:id="@+id/categoryGv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="2"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:background="#FFFFFF"></GridView>
+</LinearLayout>

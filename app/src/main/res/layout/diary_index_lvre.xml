@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lvreLl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/selreiV"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:src="@drawable/dele"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/lv_selector"
+        />
+    <com.example.khj.customdiary.CustomLayout.MyTextView
+        android:id="@+id/lvreTvTitle"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="7"
+        android:gravity="center_vertical"
+        android:text="List setup"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:background="@drawable/lv_selector"/>
+
+    <TextView
+        android:id="@+id/lvreTvCount"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="999개"
+        android:textSize="12dp"
+        android:background="@drawable/white_stroke" />
+    <ImageView
+        android:id="@+id/delreiV"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:src="@drawable/dele"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/lv_selector"
+        />
+</LinearLayout>

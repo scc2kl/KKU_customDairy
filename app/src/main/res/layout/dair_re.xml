@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.khj.customdiary.CustomLayout.DairChoice xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dairlL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/lv_selector"
+    >
+
+    <ImageView
+        android:id="@+id/dairIv"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:padding="7dp"
+        android:src="@drawable/plus"
+        />
+
+    <TextView
+        android:id="@+id/dairTv"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:text="TESTT TPSLDIOISJKLAJK" />
+
+    <RadioButton
+        android:id="@+id/dairR"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginRight="20dp"/>
+
+</com.example.khj.customdiary.CustomLayout.DairChoice>

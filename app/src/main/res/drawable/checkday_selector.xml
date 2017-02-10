@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--클릭했을때-->
+    <item android:drawable="@color/colorBlack"
+        android:state_pressed="true" />
+    <item android:drawable="@drawable/red_stroke" />
+    <!--<item android:drawable="@color/colorToday" />-->
+</selector>
